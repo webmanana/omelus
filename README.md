@@ -1,2 +1,3 @@
 # omelus
-![alt text](https://raw.githubusercontent.com/webmanana/copytechservice/master/preview.png)
+![alt text](https://github.com/webmanana/omelus/blob/master/preview.png)
+![alt text](https://github.com/webmanana/omelus/blob/master/preview1.png)
