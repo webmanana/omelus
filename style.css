@@ -560,11 +560,12 @@ blockquote p {
 	flex-wrap: wrap;
 }
 .profile_menu ul li a {
-	color: #fff;
-	font-size: 14px;
-	line-height: 16px;
-	padding: 18px 20px;
-	text-align: left;
+    color: #fff;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 18px 20px;
+    text-align: left;
+    border-radius: 4px 0 0 4px;
 }
 .profile_menu ul li a.active {
 	background-color: #2B4FDB;
@@ -660,6 +661,10 @@ blockquote p {
     border: none;
     outline: none;
     height: 50px;
+    border-bottom: 1px solid #eee;
+}
+.select2-results__option:last-child {
+	border-bottom: none;
 }
 .select2-container--default .select2-selection--single .select2-selection__rendered {
     color: #2043CD;
@@ -768,6 +773,11 @@ footer {
 	}
 	.profile_submit_block{
 	    width: 50%;
+	}
+	.title {
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 19px;
 	}
 	.cat_single_content .model_list table thead tr th, .cat_single_content .model_list table tbody tr td {
 		padding-right: 15px;
