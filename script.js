@@ -162,3 +162,8 @@ $(document).ready(function(){
   $( ".p" ).toggle();
 });
 });
+$(document).ready(function() {
+    $('.js-example-basic-multiple').select2({
+		minimumResultsForSearch: -1
+	});
+});

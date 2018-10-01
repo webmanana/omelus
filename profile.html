@@ -8,6 +8,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 	<link rel="stylesheet" href="foundation/css/foundation.min.css" />
+	<link rel="stylesheet" href="vendor/select2/css/select2.min.css" />
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
@@ -108,11 +109,20 @@
 									<li><a class="active" href="#">Личные данные</a></li>
 									<li><a href="#">Мой гараж</a></li>
 									<li><a href="#">Мои заказы</a></li>
-									<li><a href="#">Мои заказы</a></li>
 									<li><a href="#">Адреса доставки</a></li>
 									<li><a href="#">Корзина</a></li>
 									<li><a href="#">Завершить сеанс</a></li>
 								</ul>
+							</div>
+							<div class="profile_mobile_menu">
+								<select class="js-example-basic-multiple">
+									<option value="profile_1">Личные данные</option>
+									<option value="profile_2">Мой гараж</option>
+									<option value="profile_3">Мои заказы</option>
+									<option value="profile_4">Адреса доставки</option>
+									<option value="profile_5">Корзина</option>
+									<option value="profile_6">Завершить сеанс</option>
+								</select>
 							</div>
 						</div>
 						<div class="cell small-12 medium-8">
@@ -197,6 +207,7 @@
 	<script>
 		$(document).foundation();
 	</script>
+	<script type="text/javascript" src="vendor/select2/js/select2.min.js"></script>
 	<script type="text/javascript" src="script.js"></script>
 </body>
 
