@@ -775,9 +775,10 @@ footer {
 	    width: 50%;
 	}
 	.title {
-		font-size: 16px;
-		font-weight: 500;
-		line-height: 19px;
+	    font-size: 16px;
+	    font-weight: 500;
+	    line-height: 19px;
+	    margin-bottom: 20px;
 	}
 	.cat_single_content .model_list table thead tr th, .cat_single_content .model_list table tbody tr td {
 		padding-right: 15px;
