@@ -247,7 +247,7 @@ blockquote p {
 .page {
 	padding-bottom: 100px;
 	padding-top: 20px;
-	min-height: 680px;
+	min-height: 800px;
 }
 
 .category_name {
@@ -554,6 +554,9 @@ blockquote p {
 }
 
 /* профиль */
+.profile_sidebar {
+	position: relative;
+}
 .profile_menu ul li {
 	display: flex;
 	flex-direction: column;
@@ -568,10 +571,9 @@ blockquote p {
     border-radius: 4px 0 0 4px;
 }
 .profile_menu ul li a.active {
-	background-color: #2B4FDB;
-	background-image: url(img/rectangle.png);
-	background-position: right;
-	background-repeat: no-repeat;
+    background-image: url(img/profile_block2.png);
+    background-repeat: no-repeat;
+    width: 300px;
 }
 .profile_info {
 	display: flex;
@@ -696,7 +698,6 @@ blockquote p {
 .select2-container {
     max-width: 100%;
 }
-table-layout: fixed;
 /* footer */
 
 footer {
@@ -740,6 +741,11 @@ footer {
 	.header_menu ul li span, .header_menu ul li a {
 		padding: 12px 20px;
 	}
+	.profile_menu ul li a.active {
+	    width: 274px;
+	    background-size: contain;
+	    padding: 15px 20px;
+	}
 }
 @media screen and (max-width: 1024px) and (min-width: 768px) {
 	.header_button a span {
@@ -774,11 +780,17 @@ footer {
 	.profile_submit_block{
 	    width: 50%;
 	}
+	.breadcrumb {
+		margin-top: 0;
+	}
 	.title {
 	    font-size: 16px;
 	    font-weight: 500;
 	    line-height: 19px;
 	    margin-bottom: 20px;
+	}
+	.complect_block {
+		width: 33%;
 	}
 	.cat_single_content .model_list table thead tr th, .cat_single_content .model_list table tbody tr td {
 		padding-right: 15px;
@@ -837,5 +849,8 @@ footer {
 	.header_top {
 		padding-top: 30px;
 		padding-bottom: 30px;
+	}
+	.complect_block {
+		width: 50%;
 	}
 }
