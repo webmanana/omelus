@@ -16,9 +16,9 @@
 
 @font-face {
 	font-family: 'Aktiv Grotesk Corp';
-	src: url('./fonts/AktivGroteskCorp-Medium.eot');
-	src: local('./fonts/AktivGroteskCorp-Medium'), url('./fonts/AktivGroteskCorp-Medium.eot?#iefix') format('embedded-opentype'), url('./fonts/AktivGroteskCorp-Medium.woff') format('woff'), url('./fonts/AktivGroteskCorp-Medium.ttf') format('truetype');
-	font-weight: 500;
+	src: url('./fonts/AktivGroteskCorp-Bold.eot');
+	src: local('./fonts/AktivGroteskCorp-Bold'), url('./fonts/AktivGroteskCorp-Bold.eot?#iefix') format('embedded-opentype'), url('./fonts/AktivGroteskCorp-Bold.woff') format('woff'), url('./fonts/AktivGroteskCorp-Bold.ttf') format('truetype');
+	font-weight: 600;
 	font-style: normal;
 }
 
@@ -178,7 +178,7 @@ blockquote p {
 .main_block h3 {
 	color: #fff;
 	font-size: 18px;
-	font-weight: 500;
+	font-weight: 600;
 }
 
 .main_block span {
@@ -223,10 +223,6 @@ blockquote p {
 	margin-top: 0;
 }
 
-.page_bread {
-	background-color: #fff;
-}
-
 .page_bread .breadcrumb a, .page_bread .breadcrumb span {
 	color: #aeb3cb;
 }
@@ -235,11 +231,10 @@ blockquote p {
 	padding-bottom: 100px;
 	padding-top: 20px;
 	min-height: 680px;
-	background-color: #fff;
 }
 
 .page_inner h1 {
-	color: #0a248a;
+	color: #fff;
 }
 
 /* category all */
@@ -260,7 +255,7 @@ blockquote p {
 .category_name span {
 	color: #fff;
 	font-size: 18px;
-	font-weight: 500;
+	font-weight: 600;
 }
 
 .category_block {
@@ -698,6 +693,104 @@ blockquote p {
 .select2-container {
     max-width: 100%;
 }
+/* myorder */
+.myorder_head {
+	background-color: #2B4FDB;
+	padding: 23px 30px;
+	border-radius: 3px 3px 0 0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.myorder_head_block {
+	width: 25%;
+	display: flex;
+	flex-direction: column;
+}
+.myorder_head_top {
+	font-weight: 400;
+}
+.myorder_head_bottom {
+	font-weight: 600;
+}
+.myorder_content {
+	background-color: #fff;
+	padding: 30px;
+	color: #000;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.myorder_product_desc h2 {
+	font-size: 14px;
+	text-transform: uppercase;
+	margin-bottom: 25px;
+}
+.myorder_meta {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+.myorder_count {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	width: 50%;
+	font-size: 12px;
+}
+.myorder_article {
+	font-size: 12px;
+}
+.myorder_count_1 {
+	font-weight: 600;
+}
+.myorder_product_img {
+    display: flex;
+    width: 30%;
+    align-items: center;
+    /* justify-content: center; */
+}
+.myorder_product_block {
+    border: 1px solid #eee;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+.myorder_product_desc {
+	width: 70%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+.myorder_product, .myorder_product_address {
+	width: 48%;
+}
+.myorder_product_address {
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+.myorder_address_1 {
+	font-weight: 600;
+	margin-bottom: 15px;
+	font-size: 15px;
+}
+.myorder_address_2 {
+	margin-bottom: 30px;
+	line-height: 21px;
+}
+.myorder_button {
+    color: #fff;
+    background-color: #2B4FDB;
+    padding: 14px 22px;
+    border-radius: 3px;
+    display: inline-block;
+}
 /* footer */
 
 footer {
@@ -769,6 +862,26 @@ footer {
 	.cat_single_inner .tabs-title {
 		width: 100%;
 	}
+	.myorder_product, .myorder_product_address {
+		width: 100%;
+	}
+	.myorder_product {
+		order: 1;
+	}
+	.myorder_product_address {
+	    padding-left: 0;
+	    margin-bottom: 30px;
+		flex-direction: row;
+	}
+	.myorder_address_block {
+	    width: 50%;
+	    display: flex;
+	    flex-direction: column;
+	}
+	.myorder_head_block {
+		width: 50%;
+		margin-bottom: 15px;
+	}
 	.cat_single_inner .tabs-title {
 		border-right: 0;
 		border-bottom: 1px solid #2b4fdb;
@@ -785,7 +898,7 @@ footer {
 	}
 	.title {
 	    font-size: 16px;
-	    font-weight: 500;
+	    font-weight: 600;
 	    line-height: 19px;
 	    margin-bottom: 20px;
 	}
@@ -852,5 +965,17 @@ footer {
 	}
 	.complect_block {
 		width: 50%;
+	}
+	.myorder_address_block, .myorder_head_block {
+	    width: 100%;
+	}
+	.myorder_head, .myorder_content {
+		padding: 20px;
+	}
+	.myorder_product_block {
+		padding: 10px;
+	}
+	.myorder_product_address, .myorder_address_2 {
+		margin-bottom: 20px;
 	}
 }
