@@ -9,6 +9,7 @@
 
 	<link rel="stylesheet" href="foundation/css/foundation.min.css" />
 	<link rel="stylesheet" href="vendor/select2/css/select2.min.css" />
+	<link rel="stylesheet" type="text/css" href="vendor/owlcarousel/assets/owl.carousel.min.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
@@ -140,8 +141,8 @@
 									</div>
 								</div>
 								<div class="myorder_content">
-									<div class="myorder_product">
-										<div class="myorder_product_block">
+									<div class="myorder_product owl-carousel owl-theme">
+										<div class="myorder_product_block item">
 											<div class="myorder_product_img">
 												<img src="img/product1.png" alt="">
 											</div>
@@ -160,7 +161,7 @@
 												</div>
 											</div>
 										</div>
-										<div class="myorder_product_block">
+										<div class="myorder_product_block item">
 											<div class="myorder_product_img">
 												<img src="img/product1.png" alt="">
 											</div>
@@ -179,8 +180,8 @@
 												</div>
 											</div>
 										</div>
-										<a class="myorder_button" href="#">Еще товары</a>
 									</div>
+									<a class="myorder_button" href="#">Еще товары</a>
 									<div class="myorder_product_address">
 										<div class="myorder_address_block">
 											<span class="myorder_address_1">Адрес доставки</span>
@@ -190,7 +191,7 @@
 											<span class="myorder_address_1">Личные данные</span>
 											<span class="myorder_address_2">Иванов Иван Иванович<br>Тел: +7 (999) 999-99-99</span>
 										</div>
-										<a class="myorder_button" href="">Оформить заказ повторно</a>
+										<a class="myorder_button_2" href="">Оформить заказ повторно</a>
 									</div>
 								</div>
 							</div>
@@ -226,7 +227,9 @@
 	<script>
 		$(document).foundation();
 	</script>
+	<script src="vendor/owlcarousel/owl.carousel.min.js"></script>
 	<script type="text/javascript" src="vendor/select2/js/select2.min.js"></script>
+	<script type="text/javascript" src="owl.js"></script>
 	<script type="text/javascript" src="script.js"></script>
 </body>
 
