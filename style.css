@@ -281,7 +281,24 @@ blockquote p {
 }
 
 /* page */
-
+.tabs-title.is-active a {
+    background-color: #3456de;
+    color: #9bafff;
+    outline: none;
+}
+.product_col span {
+	font-weight: 600;
+	font-size: 18px;
+}
+.product_head {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+}
+.product_title_1 {
+	width:
+}
 .title {
 	color: #fff;
 	font-size: 30px;
