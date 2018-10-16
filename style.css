@@ -287,17 +287,55 @@ blockquote p {
     outline: none;
 }
 .product_col span {
-	font-weight: 600;
+	font-weight: 400;
 	font-size: 18px;
+}
+.product_col {
+	margin-bottom: 20px;
 }
 .product_head {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	width: 100%;
+	background-color: #3456DE;
+	padding: 22px 30px;
+	border-radius: 5px 5px 0 0;
 }
-.product_title_1 {
-	width:
+.product_title_1, .product_title_3, .product_desc_1, .product_desc_3 {
+	width: 25%;
+}
+.product_title_2, .product_desc_2 {
+	width: 50%;
+}
+.product_desc_3 {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.product_desc_3 a {
+	background-color: #3760FF;
+	color: #fff;
+	padding: 15px 25px;
+	border-radius: 3px;
+}
+.product_content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 18px 30px;
+    border-radius: 0 0 5px 5px;
+    background-color: #fff;
+    color: #000;
+    align-items: center;
+}
+.product_desc_3 {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.bold {
+	font-weight: 600;
 }
 .title {
 	color: #fff;
