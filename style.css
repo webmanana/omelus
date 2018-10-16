@@ -180,6 +180,9 @@ blockquote p {
     border: 0px solid black;
     outline: none;
 }
+.owl-carousel.off {
+    display: block;
+}
 .special__right {
     border-radius: 50%;
     padding: 14px;
