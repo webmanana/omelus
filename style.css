@@ -509,7 +509,10 @@ blockquote p {
 .accordion-item .accordion-content {
 	display: none;
 }
-
+.desktop_hide {
+	display: none;
+	font-weight: 600;
+}
 .accordion li {
 	border-bottom: 1px solid transparent;
 }
@@ -1005,9 +1008,23 @@ footer {
 	    display: flex;
 	    flex-direction: column;
 	}
-	.myorder_head_block {
+	.desktop_hide {
+		display: flex;
+	}
+	.product_desc_3 {
+		width: 100%;
+		justify-content: flex-start;
+	}
+	.product_price {
+		width: 50%;
+	}
+	.myorder_head_block  {
 		width: 50%;
 		margin-bottom: 15px;
+	}
+	.product_desc_1, .product_desc_2 {
+		margin-bottom: 25px;
+		width: 50%;
 	}
 	.cat_single_inner .tabs-title {
 		border-right: 0;
@@ -1038,13 +1055,16 @@ footer {
 	.content {
 		min-height: 100%;
 	}
+	.product_content {
+		border-radius: 5px;
+	}
 	.header_button a span {
 		color: #fff;
 		font-size: 14px;
 		font-weight: 400;
 		margin-right: 10px;
 	}
-	.privacy, .burger, .profile_menu, .myorder_button {
+	.privacy, .burger, .profile_menu, .myorder_button, .product_head {
 		display: none;
 	}
 	.profile_mobile_menu {
