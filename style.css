@@ -722,6 +722,12 @@ blockquote p {
 .detale_desc_content:hover .detale_block_desc a{
 	background-color: #1534AB;
 }
+.is-active .detale_desc_content {
+	background-color: #3760FF;
+}
+.is-active .detale_desc_content .detale_block_desc a{
+	background-color: #1534AB;
+}
 .code {
     width: 18%;
 }
