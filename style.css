@@ -700,6 +700,7 @@ blockquote p {
     flex-direction: row;
     flex-wrap: wrap;
 	width: 100%;
+	position: relative;
 }
 .detale_block_desc1 {
     display: flex;
@@ -1013,7 +1014,15 @@ footer {
 .privacy a:hover {
 	color: #1a3ab9;
 }
-.detale_block_desc img {
+.detale_block_desc img  {
+	display: none;
+}
+.detale_mobile_url {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
 	display: none;
 }
 @media screen and (max-width: 1164px) and (min-width: 1024px) {
@@ -1061,7 +1070,7 @@ footer {
 	.myorder_product {
 		order: 1;
 	}
-	.detale_block_desc img {
+	.detale_block_desc img, .detale_mobile_url {
 		display: flex;
 	}
 	.detale_block_title {
