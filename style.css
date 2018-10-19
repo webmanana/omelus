@@ -1110,6 +1110,7 @@ footer {
 	}
 	.breadcrumb_mobile {
 		display: flex;
+		padding-top: 15px;
 	}
 	.breadcrumb_mobile a {
 		color: #9CB0FF;
