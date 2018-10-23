@@ -89,7 +89,7 @@ blockquote p {
 	justify-content: center;
 }
 
-.logo_mobile {
+.logo_mobile, .mobile_result {
 	display: none;
 }
 
@@ -1039,6 +1039,7 @@ footer {
 	background-color: #fff;
 	color: #000;
 	padding: 20px 30px;
+	position: relative;
 	border-bottom: 1px solid #eee;
 }
 .cart_block:first-child {
@@ -1058,14 +1059,39 @@ footer {
 	color: #808C9E;
 	font-size: 13px;
 }
-.cart_col {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
+.cart_price {
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.cart_plus button {
-    padding: 9px;
+.cart_price span, .cart_price_result span {
+	margin-right: 5px;
+}
+.cart_price_result {
+	display: flex;
+	width: 15%;
+	align-items: center;
+	justify-content: center;
+}
+.cart_col {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    border: 1px solid #eee;
+    justify-content: center;
+    align-items: center;
+    max-width: 85px;
+}
+.cart_plus button, .cart_minus button {
+    padding: 11px 8px;
     outline: none;
+    display: flex;
+    cursor: pointer;
+}
+.cart_plus button:hover path, .cart_minus button:hover path, .cart_delete a:hover path {
+	fill: #0a248a;
 }
 .cart_col_end input {
 	text-align: center;
@@ -1079,6 +1105,62 @@ footer {
 	outline: none;
 	box-shadow: none;
 	font-weight: 700;
+}
+.cart_col_end input::-webkit-outer-spin-button,
+.cart_col_end input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+.cart_delete {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	margin-left: auto;
+}
+.cart_result {
+    padding: 20px 30px;
+    background-color: #EDEFF6;
+    border-radius: 0 0 5px 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.cart_result_price {
+    margin-left: auto;
+    color: #000;
+    padding-right: 116px;
+}
+.cart_result_button1 {
+	padding: 12px 20px;
+	color: #fff;
+	border-radius: 3px;
+	background-color: #2B4FDB;
+	margin-right: 10px;
+}
+.cart_result_button2 {
+	padding: 12px 20px;
+	color: #3456DE;
+	border-radius: 3px;
+	background-color: #fff;
+}
+.cart_result_price {
+    align-items: center;
+    display: flex;
+}
+.cart_result_inner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+.cart_result_price span {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.cart_price, .cart_price_result {
+	width: 19%;
 }
 @media screen and (max-width: 1164px) and (min-width: 1024px) {
 	.header_menu ul li span, .header_menu ul li a {
@@ -1106,6 +1188,9 @@ footer {
 	.profile_menu {
 		display: none;
 	}
+	.cart_price, .cart_price_result {
+		width: 15%;
+	}
 }
 
 @media (max-width: 768px) {
@@ -1119,8 +1204,14 @@ footer {
 		order: 2;
 		width: 25%;
 	}
-	.detale_block_desc a {
+	.cart_price, .cart_price_result {
+		width: 15%;
+	}
+	.detale_block_desc a, .cart_price {
 		display: none;
+	}
+	.cart_title {
+	    width: 60%;
 	}
 	.myorder_product {
 		order: 1;
@@ -1272,22 +1363,75 @@ footer {
 	.profile_submit_block {
 		padding-right: 15px;
 	}
+	.cart_result_inner {
+		display: flex;
+		width: 100%;
+	}
+	.cart_result_price {
+	    padding-right: 0;
+	    align-items: center;
+	    display: flex;
+	}
 }
 
 @media (max-width: 560px) {
 	.main_block {
 		margin-bottom: 15px;
 	}
+	.cart_title {
+	    width: 100%;
+	    margin-bottom: 15px;
+	}
+	.cart_price_result {
+	    width: 50%;
+	}
+	.cart_col {
+		max-width: auto;
+		width: 40%;
+	}
 	.detale_tabs_title ul {
 		padding-left: 22px;
 		padding-right: 22px;
+	}
+	.cart_delete {
+		position: absolute;
+		right: -8px;
+		bottom: 25px;
+	}
+	.cart_delete a {
+	    background-color: #fff;
+	    border-radius: 20px;
+	    padding: 7px;
+	    border: 1px solid #eee;
+	    display: flex;
+	    align-items: center;
+	    justify-content: center;
+	}
+	.cart_block {
+		padding: 20px;
 	}
 	.detale_tabs_title ul li a {
 		padding-top: 18px;
 		padding-bottom: 18px;
 		margin-right: 15px;
 	}
-	.ipad_phone {
+	.mobile_result {
+	    display: flex;
+	    color: #fff;
+	    width: 100%;
+	    padding: 20px;
+	    justify-content: center;
+	}
+	.mobile_result span {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	.cart_result {
+	    background-color: #2B4FDB;
+	    color: #fff;
+	    padding: 0;
+	}
+	.ipad_phone, .cart_result_inner {
 		display: none;
 	}
 	.header_top {
