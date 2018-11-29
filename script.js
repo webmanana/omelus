@@ -1,3 +1,9 @@
+$('#showFilePanel').click(function(event) {
+	if ($('.cart_right').hasClass('dismiss')) {
+		$('.cart_right').removeClass('dismiss').addClass('selected').show();
+	}
+	event.preventDefault();
+});
 $(document).ready(function(){
 	$('.news_slider').slick({
 		infinite: false,
