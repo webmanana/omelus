@@ -304,9 +304,6 @@ blockquote p {
 	margin-bottom: 30px;
 	margin-top: 0;
 }
-.cart_close {
-	outline: none;
-}
 .cart_url {
 	border-radius: 3px;
 	color: #fff;
@@ -320,6 +317,8 @@ blockquote p {
 	padding: 15px 30px;
 	width: 100%;
 	background-color: #EEEEEE;
+	outline: none;
+	cursor: pointer;
 }
 /* gradient */
 
@@ -1453,6 +1452,9 @@ footer {
 @media (max-width: 768px) {
 	.cat_single_inner .tabs-title {
 		width: 100%;
+	}
+	.cart_popup {
+		max-width: 100%;
 	}
 	.myorder_product, .myorder_product_address {
 		width: 100%;
