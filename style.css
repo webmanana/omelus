@@ -1453,9 +1453,6 @@ footer {
 	.cat_single_inner .tabs-title {
 		width: 100%;
 	}
-	.cart_popup {
-		max-width: 100%;
-	}
 	.myorder_product, .myorder_product_address {
 		width: 100%;
 	}
@@ -1646,6 +1643,22 @@ footer {
 @media (max-width: 560px) {
 	.main_block {
 		margin-bottom: 15px;
+	}
+	.auth_input_inner,.auth_submit_block {
+		flex-direction: column;
+	}
+	.auth_submit_block a {
+		margin-top: 10px;
+		text-align: center;
+	}
+	.auth_submit_block button {
+		margin-bottom: 10px;
+	}
+	.auth_input_block, .auth_submit_block button, .auth_submit_block a {
+		width: 100%;
+	}
+	.cart_popup {
+		max-width: 100%;
 	}
 	.cart_title {
 	    width: 100%;
