@@ -1154,6 +1154,7 @@ select:-webkit-autofill:focus {
 }
 .myorder_head_bottom {
 	font-weight: 600;
+	font-family: 'Oswald', sans-serif;
 }
 .myorder_content {
 	background-color: #fff;
@@ -1182,6 +1183,7 @@ select:-webkit-autofill:focus {
 }
 .myorder_article {
 	font-size: 12px;
+	font-family: 'Oswald', sans-serif;
 }
 .myorder_count_1 {
 	font-weight: 600;
